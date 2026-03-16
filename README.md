@@ -1,1 +1,35 @@
-# uf13-spring-rubrica
+# Spring Rubrica
+
+Applicazione Spring per la gestione di una rubrica di contatti tramite database MySQL su container Docker
+
+## Dependencies
+- Spring Web (sviluppo webapp -> pagine HTML)
+- Spring DevTools (opzionale, gestisce il riavvio rapido dell'applicazione)
+- Thymeleaf (templating HTML per pagine dinamiche)
+- Spring Data JPA (tecnologia di gestione dei database)
+- Driver MySQL (connettore al DBMS)
+- Validator (validazione dei form)
+- Lombok (boilerplate code)
+- TODO
+
+Per aggiungere nuove dependencies usare l'ozione `Spring Initializr: Add starters...`
+
+## Avvio applicazione
+
+1. Creazione del container per il database specificato in `docker-compose.yaml`
+
+```bash
+docker compose up mysql-db [-d]
+```
+
+2. Verificare il corretto avvio del container
+
+```bash
+docker compose ps
+```
+
+3. Terminare l'esecuzione del container
+
+```bash
+docker compose down
+```
